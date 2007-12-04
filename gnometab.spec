@@ -2,7 +2,7 @@
 %define version	0.7.4
 %define release	4mdk
 
-Summary:	Gnometab aims to be a WYSIWYG guitar tablature editor.
+Summary:	Gnometab aims to be a WYSIWYG guitar tablature editor
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
