@@ -17,7 +17,7 @@ Patch0:		%{name}-0.7.4-schemas.patch.bz2
 Patch1:		%{name}-0.7.4-depr.patch.bz2
 BuildRequires:	libgnomeui2-devel
 BuildRequires:	libgnomeprintui-devel
-Prereq:		GConf2 >= 2.3.3
+Requires(post,preun):		GConf2 >= 2.3.3
 
 %description
 Gnometab aims to be a WYSIWYG (what you see is what you get) tablature editor.  
