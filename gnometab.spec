@@ -50,11 +50,15 @@ unset GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL
 rm -rf $RPM_BUILD_ROOT%{_prefix}/doc
 
 # Menu
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat >$RPM_BUILD_ROOT%{_menudir}/%{name} <<EOF
-?package(%{name}): command="%{_bindir}/%{name}" needs="X11" \
-icon="%{name}.png" section="Multimedia/Sound" \
-title="Gnometab" longtitle="Gnometab is a guitar tablature editor."
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
+[Desktop Entry]
+Type=Application <<EOF
+Exec=%{_bindir}/%{name}
+Icon=AudioVideo;Player;Audio;
+Categories=Multimedia/Sound
+Name=Gnometab
+Comment=Gnometab is a guitar tablature editor.
 EOF
 
 #icon
@@ -86,7 +90,7 @@ rm -fr $RPM_BUILD_ROOT
 %{_datadir}/pixmaps/*
 %{_datadir}/gnome/apps/Applications/gnometab.desktop
 %{_sysconfdir}/gconf/schemas/gnometab.schemas
-%{_menudir}/*
+%{_datadir}/applications/mandriva-*.desktop
 %{_iconsdir}/%{name}.png
 %{_miconsdir}/%{name}.png
 %{_liconsdir}/%{name}.png
