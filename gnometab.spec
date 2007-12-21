@@ -15,6 +15,7 @@ Source2:	%{name}_32.png
 Source3:	%{name}_48.png
 Patch0:		%{name}-0.7.4-schemas.patch.bz2
 Patch1:		%{name}-0.7.4-depr.patch.bz2
+BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 BuildRequires:	libgnomeui2-devel
 BuildRequires:	libgnomeprintui-devel
 Requires(post,preun):		GConf2 >= 2.3.3
