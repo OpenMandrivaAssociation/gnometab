@@ -21,7 +21,7 @@ BuildRequires:	libgnomeprintui-devel
 Requires(post,preun):		GConf2 >= 2.3.3
 
 %description
-Gnometab aims to be a WYSIWYG (what you see is what you get) tablature editor.  
+Gnometab aims to be a WYSIWYG (what you see is what you get) tablature editor.
 Gnometab's features include copying and pasting of tablature passages, a
 chord library (which the user must fill with chords), professional-looking
 rhythm notation (not perfect yet), the ability to create a variety of
