@@ -69,14 +69,10 @@ install -D -m 0644 %{SOURCE3} $RPM_BUILD_ROOT/%{_liconsdir}/%{name}.png
 
 %post
 %{update_menus}
-GCONF_CONFIG_SOURCE=`gconftool-2 --get-default-source` \
-%{_bindir}/gconftool-2 --makefile-install-rule %{_sysconfdir}/gconf/schemas/gnometab.schemas > /dev/null
+%post_install_gconf_schemas gnometab
 
 %preun
-if [ $1 -eq 0 ]; then
-  GCONF_CONFIG_SOURCE=`gconftool-2 --get-default-source` \
-  %{_bindir}/gconftool-2 --makefile-uninstall-rule %{_sysconfdir}/gconf/schemas/gnometab.schemas > /dev/null
-fi
+%preun_uninstall_gconf_schemas gnometab
 
 %postun
 %{clean_menus}
