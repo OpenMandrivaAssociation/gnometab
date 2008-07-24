@@ -1,6 +1,6 @@
 %define name	gnometab
 %define version	0.7.4
-%define release	 %mkrel 4
+%define release	 %mkrel 6
 
 Summary:	Gnometab aims to be a WYSIWYG guitar tablature editor
 Name:		%{name}
