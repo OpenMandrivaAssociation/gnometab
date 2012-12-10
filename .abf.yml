@@ -1,5 +1,4 @@
 sources:
-  "gnometab-0.7.4.tar.bz2:"	a8d61755abcad49f8e25391aabd2ff094d2eb469
-  "gnometab_16.png:"	bfb628a45b600f81c0746af50ecb7e62d8fcc450
-  "gnometab_32.png:"	507f1d02d3198fa0f0059f26d482ab87c3206310
-  "gnometab_48.png:"	1d6643096d486f84451e1b21e52c121a942c5166
+  "gnometab-0.7.4-depr.patch.bz2": 05db6bd2871fa3e54f1b490b8428b983b7cc8a0f
+  "gnometab-0.7.4-schemas.patch.bz2": f4b3189186db5ae4b31e9e07e48f0f4ebb2bad26
+  "gnometab-0.7.4.tar.bz2": a8d61755abcad49f8e25391aabd2ff094d2eb469

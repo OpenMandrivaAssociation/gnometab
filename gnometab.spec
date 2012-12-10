@@ -97,3 +97,49 @@ rm -fr $RPM_BUILD_ROOT
 %{_liconsdir}/%{name}.png
 
 
+
+
+%changelog
+* Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 0.7.4-8mdv2011.0
++ Revision: 619162
+- the mass rebuild of 2010.0 packages
+
+* Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 0.7.4-7mdv2010.0
++ Revision: 429262
+- rebuild
+
+* Thu Jul 24 2008 Thierry Vignaud <tv@mandriva.org> 0.7.4-6mdv2009.0
++ Revision: 246465
+- rebuild
+- fix description-line-too-long
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+    - use %%post_install_gconf_schemas/%%preun_uninstall_gconf_schemas
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Mon Dec 17 2007 Thierry Vignaud <tv@mandriva.org> 0.7.4-4mdv2008.1
++ Revision: 131654
+- auto-convert XDG menu entry
+- fix prereq
+- kill re-definition of %%buildroot on Pixel's request
+- use %%mkrel
+- fix summary-ended-with-dot
+- import gnometab
+
+
+* Fri Nov 04 2005 Marcel Pol <mpol@mandriva.org> 0.7.4-4mdk
+- rebuild
+
+* Thu Sep 02 2004 Marcel Pol <mpol@mandrake.org> 0.7.4-3mdk
+- patch1 fix compile
+
+* Mon Aug 11 2003 Abel Cheung <maddog@linux.org.hk> 0.7.4-2mdk
+- Patch0: Fix schemas list type error
+- misc spec fixes
+- Uninstall schemas at preun
+
+* Wed Apr 30 2003 Marcel Pol <mpol@gmx.net> 0.7.4-1mdk
+- initial mandrake release
