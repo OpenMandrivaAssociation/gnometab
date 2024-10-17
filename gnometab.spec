@@ -8,7 +8,7 @@ Version:	%{version}
 Release:	%{release}
 License:	GPL
 Group:		Sound
-URL:		http://www.solutionm.com/gnometab/
+URL:		https://www.solutionm.com/gnometab/
 Source0:	%{name}-%{version}.tar.bz2
 Source1:	%{name}_16.png
 Source2:	%{name}_32.png
